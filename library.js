@@ -35,7 +35,9 @@ plugin.init = function(params, callback) {
 				"duration": 280374980
 		});
 	});
-
+	const interval = setInterval(() => {
+		console.log("calling inteval :)");
+	},1000);
 
 	callback();
 };
