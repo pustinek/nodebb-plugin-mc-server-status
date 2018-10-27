@@ -1,0 +1,26 @@
+{
+	"id": "nodebb-plugin-mc-status",
+	"url": "https://github.com/NodeBB/nodebb-plugin-quickstart",
+	"library": "./library.js",
+	"hooks": [
+		{
+			"hook": "static:app.load", "method": "init"
+		},
+		{
+			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
+		}
+	],
+	"staticDirs": {
+		"static": "./static"
+	},
+	"less": [
+		"static/style.less"
+	],
+	"scripts": [
+		"static/lib/client.js"
+	],
+	"acpScripts": [
+		"static/lib/acp.js"
+	],
+	"templates": "static/templates"
+}
